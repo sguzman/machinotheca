@@ -1,6 +1,6 @@
 # Machinotheca gallery
 
-**No local interactive specimens are published yet.** The gallery remains deliberately empty until a real exhibit, its independent technical ontology, links and browser tests have been transferred into this repository.
+**No local interactive specimens are published here yet.** The gallery remains deliberately empty until the first real exhibit, its independent technical ontology, links and browser tests have been transferred into this repository. **The repository itself may contain unfinished research, candidate queues, failed experiments and diagnostic histories without adding any of them to the curated gallery.**
 
 The authoritative machine-readable exhibit index is [index.json](index.json).
 

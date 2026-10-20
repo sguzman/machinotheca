@@ -2,9 +2,9 @@
 
 **Status:** Plan approved for staged implementation; no specimen source tree is considered transferred by creating this plan.
 
-**Objective:** Reconstitute the full releasable engineering knowledge base and the entire engineering portion of the existing interactive-demo showcase in this single, self-sufficient public repository. Preserve both **technical depth** and **working presentation**, with an explicit navigable relationship between them.
+**Objective:** Move substantially the entire engineering research workspace, including finished and unfinished technical work, and the full existing public engineering-demo showcase into Machinotheca. This repository hosts both the working GitHub Pages exhibition and the complete public engineering ontology. Preserve **technical depth, experimental history, internal work state, diagnostics and working presentation**. The owner selects what is prominently shown on the site; publication in Git does not imply a gallery feature.
 
-The default intention is to carry forward useful engineering work, not to throw it away because some of it began as research. A source item that cannot be published verbatim should, where legally and technically possible, be **cleanly re-authored** so the public project retains its legitimate engineering content. Do not use wholesale history imports.
+The default is **migrate the technical material**, not curatorial exclusion. Completed, active, abandoned, unsuccessful and speculative engineering work; task queues, state logs, diagnostics, research methods and modeling code are all in scope. Do not suppress them just because they are unfinished. Copy safely attributable technical content faithfully where possible; remove or neutralize any embedded private conversation or personal phrasing. Re-author only content that needs cleansing, clarification or independence. Never transplant the private Git history.
 
 ## Finished-product contract
 
@@ -17,7 +17,7 @@ Every published specimen is required to have all of:
 5. **Reader connection:** from gallery card to specimen overview, any selected 3D part to its ontology entry and evidence, and from technical entry back to the relevant scene/view.
 6. **Reproducible verification:** build/serve instructions, deterministic browser tests, asset audit, visual capture and an honest record of residual modeling limitations.
 
-A working scene without its formal model is unfinished. A technical record without a usable published experience is an unpublished specimen, not a gallery exhibit.
+A featured gallery exhibit must connect its working scene and formal technical model. **A technical record can be publicly published in the repository before it has a working scene or the owner's permission to feature it.** The public research archive, queue and experiments are not the same thing as the curated gallery.
 
 ## Repository target layout
 
@@ -41,8 +41,10 @@ specimens/
   polaroid-sx-70/
   nintendo-game-boy-dmg-01/
   ibm-selectric-721/
-  (each verified specimen has manifest.json, ontology/, sources/,
-   models/, guide/, scene/ and any safe specimen-specific tests)
+  (each specimen holds as much of its research, experiments, task
+   state and diagnostics as can safely be published; featured exhibits
+   also have manifest.json, ontology/, sources/, models/, guide/,
+   scene/ and relevant tests)
 shared/                    only common runtime and visualization utilities
 tests/                     cross-specimen ontology, causal, visual and site QA
 scripts/                   safe migration/validation utilities
@@ -84,7 +86,7 @@ Do not merely transplant document names. Convert narrative concepts into machine
 
 **Include, subject to individual safety/rights review:** domain analyses, reference-grounded construction methods, mathematical derivations, geometry procedures, baseline/model results, reproducible diagnostics, technical tables and source ledgers.
 
-**Do not expose:** private correspondence, personal commentary, raw progress logs, local working environment, access credentials, unlicensed source captures, or private repository breadcrumbs.
+**Do not expose:** private correspondence, conversations, personal venting, personal records, credentials, secrets, private-machine access details, unlicensed copied media or functioning dependencies on the private research environment. **Technical progress logs, task history, candidate queue entries, failed experiments and diagnostics are eligible public research content once private language and unsafe references are removed.**
 
 **Gate:** full ontology is self-contained, schema validated, and every material historical claim has clear evidence or an explicit hypothesis label.
 
@@ -116,13 +118,13 @@ Port the public mechanical typewriter runtime and the broad technical research: 
 
 The optional fine-serration platen-variable P6 geometry is **synthetic** and must remain opt-in. It does not establish a manufacturer tooth count, spring-force equilibrium, original clutch tooth profile or complete physical interference certification.
 
-This specimen has extensive reference geometry, dimensional diagnostics and model tests. Port all publishable, useful technical records and working solvers; distinguish reproducible research from internal build artifacts, raw third-party captures and obsolete experiments.
+This specimen has extensive reference geometry, dimensional diagnostics and model tests. Port the technical records, baselines, experiments (including unsuccessful/obsolete alternatives), working solvers, tests and reproducible diagnostics. Retain honest experimental status and distinguish data from unlicensed third-party source captures or sensitive environment-dependent artifacts.
 
 **Gate:** full causal viewer, ordinary-mode isolation, optional clutch regression, reference views and source-bound fidelity disclosures pass within Machinotheca.
 
 ### M6 — Consolidate the showcase
 
-Bring across all relevant public interactive-demo functionality and technical guides; preserve legible UX, controls, keyboard support, visibility of mechanisms, explodable views, source notes and model variants. Rework the former general-purpose gallery into a Machinotheca-only exhibition.
+Bring across **all four existing public engineering demos** with their associated public code, functionality, tests and technical guides; preserve legible UX, controls, keyboard support, visibility of mechanisms, explodable views, source notes and model variants. **Machinotheca itself hosts the replacement GitHub Pages site**; the engineering scenes must run at Machinotheca URLs rather than embedding or depending on the old site. Rework the former general-purpose gallery into a Machinotheca-only exhibition, with prominent entries chosen by the owner.
 
 Deduplicate truly shared code **only after** all four imported scenes behave correctly. Avoid refactoring the running viewers during the first copy just to invent a common rendering abstraction.
 
@@ -138,7 +140,7 @@ Machinotheca was explicitly authorized and enrolled in the public Tarium registr
 
 ## Publication rules and excluded material
 
-**Never publish:** nonpublic conversations, copied dialogue, personal venting, private notes, emotionally charged internal wording, secrets, identifying records, raw prompts, unreviewed private data, private Git history or logs, or paraphrases disclosing them. Neutral technical meaning must be rewritten from authorized evidence.
+**Never publish:** nonpublic conversations, copied dialogue, private venting language, personal notes or records, identifying personal information, secrets or credentials, original private conversation prompts, and private Git *history* containing such material. Do not include paraphrases revealing private conversations. **Ordinary technical logs, research task records, source ledgers, failed experiments, unfinished studies and diagnostic results are publishable after targeted privacy, access and rights review.**
 
 **Also protect rights:** third-party manuals, commercial photos, audio, model files and data can be referenced with attribution when redistribution is not established, but cannot silently be rehosted. An existing MIT license does not convert external media or copyrighted source text into MIT content.
 
@@ -157,8 +159,8 @@ This review is a development responsibility, **not a requirement for the owner t
 
 ## Priority and stop conditions
 
-Migrate **real specimens, full public technical data, and functioning scenes** first. Research queues without a real published specimen may become a separate public research index later, but they are not gallery exhibits.
+Migrate **the engineering ontology, technical data, working state, queues, successful and unsuccessful experiments, source analyses and existing real interactive scenes**. Candidate queues may be public and visible in the repository without being promoted to the curated website. The owner decides which working specimens or experiments deserve an exhibit.
 
 A scene's published v1 is complete when the declared scope works and its evidence limitations are explicit. Unknown factory measurements alone do not force endless synthetic refinement. Source accuracy improvements can be independent future versions.
 
-**Migration completion:** every approved source family has a recorded disposition (published, rewritten, rejected for a specific reason, replaced with citation, or intentionally deferred); all four existing demonstrations and their necessary technical ontologies/reader material are self-contained, passing, reachable in the Machinotheca gallery, and no forbidden private content is published.
+**Migration completion:** the public-safe contents of the private Engineering workspace, including incomplete and historical technical research, have been transferred with any private personal/conversation language selectively removed; the four already-public engineering demos have been transferred to functioning local Machinotheca pages with attached ontology and guides; the Machinotheca Pages site is the authoritative engineering showcase; its curated exhibition reflects the owner's selected work; and no forbidden private content is published.

@@ -6,7 +6,7 @@ Machinotheca is a self-contained, public repository for the study and interactiv
 
 Never include private conversations, copied dialogue, prompts, venting or personal language, private notes, identifying personal information, unpublished private references, secrets, credentials, raw private history or material of uncertain rights in any public repository surface. This applies to source, comments, guides, data, screenshots, builds, tests, logs, issues, commit messages and history. Rewording a private disclosure does not make it public.
 
-A transfer from nonpublic research must be examined file-by-file before publication. When mixed, preserve public technical meaning by independently re-authoring the technical portion and omitting the private portion. Default to exclusion if provenance or rights remain uncertain.
+The intended public corpus includes substantially all engineering research, whether complete, unfinished, superseded, or unsuccessful. Technical queues, working state, task histories and diagnostics may be published. Transfer content file-by-file with privacy and rights review; when mixed, remove private conversation/personal material and retain the engineering content. Exclude only the unsafe portion when technically and legally separable. Uncertain release rights for third-party content remain a reason to withhold that specific content, not an entire specimen.
 
 Automated checks are supplementary; human editorial analysis of proposed public outputs is mandatory. Never clone, merge or transplant another nonpublic repository's Git history into this one.
 
@@ -18,7 +18,7 @@ All required public code, schemas, data, source/asset references, documentation 
 
 The engineering ontology at \`ontology/\` is human- and machine-readable, versioned, and complete for the project's declared scope. Each public specimen owns a full linked technical record with identity, components, interfaces, relationships, provenance, limitations and scene bindings.
 
-The gallery at \`gallery/\` must be navigable and backed by a machine-readable index. Only real, working, verified examples may be called published exhibits; an initially empty index must be labeled accurately.
+The gallery at \`gallery/\` must be navigable and backed by a machine-readable index. The owner curates which specimens/experiments receive public showcase presentation. Technical records and incomplete experiments may be openly accessible in the repository without an exhibit. Entries labeled as working exhibits must be real and linked to their engineering ontology. An initially empty index must be labeled accurately.
 
 Models and explanatory projections can simplify. They cannot silently upgrade inferred geometry, qualitative analogy or presentation timing to measured manufacturing facts.
 

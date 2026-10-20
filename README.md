@@ -29,7 +29,7 @@ Four real, existing publicly accessible demonstrations are migration candidates.
 | Nintendo Game Boy DMG-01 | [Interactive Game Boy](https://sguzman.github.io/interactive-demos/game-boy-dmg-01/) |
 | Original IBM Selectric Model 721 typewriter | [Interactive typewriter](https://sguzman.github.io/interactive-demos/ibm-selectric-721/) |
 
-These are established examples, **not yet pages hosted by Machinotheca**. More technical material may be incorporated after publication and rights review. A candidate list never implies a fabricated scene or completed research.
+These are established examples, **not yet pages hosted by Machinotheca**. The migration also brings over the broader engineering workspace, including unfinished analyses, task queues, diagnostics and failed experiments. Those can live publicly in this repository without being featured on the site. The gallery itself shows only work the owner chooses to present.
 
 ## Evidence before appearance
 
@@ -37,7 +37,7 @@ Manufacturer information, direct measurement, derivation, secondary reports, rec
 
 ## Running the site
 
-The planned exhibition is a static, browser-based site suitable for GitHub Pages. Core data, ontology, and viewer code will live in this repository or use documented public dependencies. No private services, internal directories, or proprietary user files may be required.
+Machinotheca will itself host the replacement static, browser-based GitHub Pages exhibition for the engineering specimens. Core data, ontology, and viewer code will live in this repository or use documented public dependencies. No private services, internal directories, or proprietary user files may be required.
 
 The top-level [index](index.html) is currently an accurate project introduction, not a simulated gallery. Setup, asset attribution, automated tests and actual scene instructions will be added as each working specimen lands.
 
