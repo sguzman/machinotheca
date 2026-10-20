@@ -43,7 +43,7 @@ The top-level [index](index.html) is currently an accurate project introduction,
 
 ## Public Tarium relationship
 
-Machinotheca is designed as an independent public Tarium project. Its own code, documentation, ontology, and gallery live here. Registration in the public [Tarium registry](https://github.com/sguzman/tarium) is a separate publication step following verification.
+Machinotheca is an explicitly registered independent [public Tarium project](https://github.com/sguzman/tarium/blob/main/registry/projects.json). Its code, documentation, ontology and gallery live here. The Tarium registry links to Machinotheca but does not host or operate its exhibits. Registry membership does not imply that every planned exhibit has been migrated.
 
 ## License
 

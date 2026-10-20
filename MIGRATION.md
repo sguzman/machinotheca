@@ -134,7 +134,7 @@ Audit every path and file's contents, comments, metadata, scripts, assets, scree
 
 Preserve old public URLs until migration passes. Record known unknowns, omissions and licensed third-party notices. Publish only cleared content; omit and replace unpublishable source artifacts with public bibliographic references.
 
-After independent project requirements are verified, enroll Machinotheca in the public Tarium registry on the owner's specific authorization. Tarium remains the registry, **not** a home for these models.
+Machinotheca was explicitly authorized and enrolled in the public Tarium registry during the foundation phase. At final exhibition release, verify that the registry's ontology and gallery paths still resolve. Tarium remains the registry, **not** a home for these models.
 
 ## Publication rules and excluded material
 

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "machinotheca",
   "name": "Machinotheca",
-  "type": "public-tarium-candidate",
+  "type": "independent-public-tarium-member",
   "subject": "interactive engineering specimen collection",
   "repository": "https://github.com/sguzman/machinotheca",
   "license": "MIT (original content only; third-party licenses separately)",
@@ -18,7 +18,7 @@
   "publication": {
     "status": "migration-foundation",
     "published_specimens": 0,
-    "registry_enrollment": "pending-verification"
+    "registry_enrollment": "enrolled"
   },
   "versions": {
     "ontology": "0.1.0",
