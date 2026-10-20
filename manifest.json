@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "machinotheca",
+  "name": "Machinotheca",
+  "type": "public-tarium-candidate",
+  "subject": "interactive engineering specimen collection",
+  "repository": "https://github.com/sguzman/machinotheca",
+  "license": "MIT (original content only; third-party licenses separately)",
+  "ontology": {
+    "human": "ontology/README.md",
+    "vocabulary": "ontology/ontology.json",
+    "specimen_schema": "ontology/schema/specimen.schema.json"
+  },
+  "gallery": {
+    "human": "gallery/README.md",
+    "index": "gallery/index.json"
+  },
+  "publication": {
+    "status": "migration-foundation",
+    "published_specimens": 0,
+    "registry_enrollment": "pending-verification"
+  },
+  "versions": {
+    "ontology": "0.1.0",
+    "gallery": "0.1.0"
+  }
+}

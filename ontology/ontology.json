@@ -1,0 +1,220 @@
+{
+  "version": "0.1.0",
+  "namespace": "https://github.com/sguzman/machinotheca",
+  "domain": "engineering-of-physical-systems",
+  "identifier_rule": "stable, specimen-scoped IDs; no hidden authority required",
+  "classes": [
+    {
+      "id": "EngineeredSystem"
+    },
+    {
+      "id": "Specimen"
+    },
+    {
+      "id": "Revision"
+    },
+    {
+      "id": "Assembly"
+    },
+    {
+      "id": "Component"
+    },
+    {
+      "id": "Interface"
+    },
+    {
+      "id": "Joint"
+    },
+    {
+      "id": "Constraint"
+    },
+    {
+      "id": "Flow"
+    },
+    {
+      "id": "Mechanism"
+    },
+    {
+      "id": "Control"
+    },
+    {
+      "id": "Geometry"
+    },
+    {
+      "id": "Dimension"
+    },
+    {
+      "id": "Material"
+    },
+    {
+      "id": "ManufacturingProcess"
+    },
+    {
+      "id": "Adjustment"
+    },
+    {
+      "id": "FailureMode"
+    },
+    {
+      "id": "ServiceAction"
+    },
+    {
+      "id": "OperatingState"
+    },
+    {
+      "id": "Observation"
+    },
+    {
+      "id": "Source"
+    },
+    {
+      "id": "Claim"
+    },
+    {
+      "id": "Derivation"
+    },
+    {
+      "id": "Model"
+    },
+    {
+      "id": "InteractiveScene"
+    },
+    {
+      "id": "PresentationView"
+    }
+  ],
+  "relations": [
+    {
+      "id": "partOf",
+      "domain": "Component|Assembly",
+      "range": "Assembly|EngineeredSystem"
+    },
+    {
+      "id": "belongsToSpecimen",
+      "domain": "Component|Assembly|Model|InteractiveScene",
+      "range": "Specimen"
+    },
+    {
+      "id": "usesRevision",
+      "domain": "Specimen|Model",
+      "range": "Revision"
+    },
+    {
+      "id": "connectedBy",
+      "domain": "Component|Assembly",
+      "range": "Interface|Joint"
+    },
+    {
+      "id": "constrainedBy",
+      "domain": "Joint|Mechanism|OperatingState",
+      "range": "Constraint"
+    },
+    {
+      "id": "transmits",
+      "domain": "Component|Interface",
+      "range": "Flow"
+    },
+    {
+      "id": "controls",
+      "domain": "Control|Mechanism",
+      "range": "Mechanism|OperatingState"
+    },
+    {
+      "id": "hasGeometry",
+      "domain": "Component|Assembly|Interface",
+      "range": "Geometry"
+    },
+    {
+      "id": "hasDimension",
+      "domain": "Geometry|Component|Assembly",
+      "range": "Dimension"
+    },
+    {
+      "id": "madeOf",
+      "domain": "Component",
+      "range": "Material"
+    },
+    {
+      "id": "manufacturedBy",
+      "domain": "Component",
+      "range": "ManufacturingProcess"
+    },
+    {
+      "id": "adjustedBy",
+      "domain": "Component|Mechanism",
+      "range": "Adjustment"
+    },
+    {
+      "id": "failsBy",
+      "domain": "Component|Mechanism",
+      "range": "FailureMode"
+    },
+    {
+      "id": "servicedBy",
+      "domain": "FailureMode|Component",
+      "range": "ServiceAction"
+    },
+    {
+      "id": "supportedBy",
+      "domain": "Claim|Dimension|Model",
+      "range": "Source|Observation|Derivation"
+    },
+    {
+      "id": "derivedFrom",
+      "domain": "Derivation|Model",
+      "range": "Claim|Dimension|Model|Observation"
+    },
+    {
+      "id": "represents",
+      "domain": "Model|InteractiveScene",
+      "range": "Specimen|Component|Mechanism|OperatingState"
+    },
+    {
+      "id": "bindsToScene",
+      "domain": "Component|Assembly|Mechanism",
+      "range": "PresentationView"
+    },
+    {
+      "id": "usesModel",
+      "domain": "InteractiveScene",
+      "range": "Model"
+    },
+    {
+      "id": "observedAt",
+      "domain": "Observation",
+      "range": "Specimen|Component|OperatingState"
+    }
+  ],
+  "evidence_classes": [
+    {
+      "id": "P0",
+      "meaning": "manufacturer or primary technical source"
+    },
+    {
+      "id": "P1",
+      "meaning": "direct measurement or identified observation"
+    },
+    {
+      "id": "P2",
+      "meaning": "reproducibly derived result"
+    },
+    {
+      "id": "P3",
+      "meaning": "audited secondary technical claim"
+    },
+    {
+      "id": "P4",
+      "meaning": "explicit reconstruction assumption"
+    },
+    {
+      "id": "P5",
+      "meaning": "deliberate visual or interaction simplification"
+    },
+    {
+      "id": "P6",
+      "meaning": "experimental mechanistic hypothesis"
+    }
+  ],
+  "fidelity_rule": "factory specification != measurement != derivation != reconstruction != presentation != hypothesis",
+  "source_rights_rule": "technical attribution does not imply rights to redistribute underlying media or documents"
+}

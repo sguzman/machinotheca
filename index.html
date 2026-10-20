@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Machinotheca: interactive engineering specimens with formal technical models and evidence.">
+  <title>Machinotheca — Engineering specimens</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#101416;color:#e8eceb}
+    *{box-sizing:border-box}body{margin:0}main{max-width:1000px;margin:0 auto;padding:clamp(28px,7vw,80px) 24px 90px}
+    .eyebrow{color:#96b8b2;font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+    h1{font-size:clamp(3rem,9vw,5.5rem);letter-spacing:-.055em;line-height:1;margin:.65rem 0 1rem}
+    p{line-height:1.7;color:#c2cac9;max-width:70ch} .lead{font-size:1.25rem;max-width:60ch}
+    a{color:#a6d4c8;text-underline-offset:.2em}a:hover{color:white}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:38px 0}
+    .card{border:1px solid #33413e;border-radius:12px;padding:22px;background:#19201f}
+    .card h2{font-size:1.02rem;margin:0 0 8px}.card p{font-size:.92rem;margin:0}
+    .status{display:inline-block;border:1px solid #42534f;border-radius:999px;padding:7px 12px;color:#c4d9d3;font-size:.75rem}
+    footer{margin-top:50px;border-top:1px solid #33413e;padding-top:20px;font-size:.85rem;color:#90a39d}
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Engineering ontology &amp; interactive collection</div>
+  <h1>Machinotheca</h1>
+  <p class="lead">How engineered things work. Explore real mechanisms, follow their components, and examine the models, measurements, sources and assumptions behind them.</p>
+  <span class="status">Collection migration in progress</span>
+  <div class="cards">
+    <section class="card"><h2>Specimens</h2><p>Existing demonstrations are being migrated into a self-contained interactive gallery. No local scenes are labeled as published yet.</p></section>
+    <section class="card"><h2>Ontology</h2><p>Each specimen will connect its interactive parts to the engineering ontology, source evidence and revision-specific technical records.</p></section>
+    <section class="card"><h2>Evidence</h2><p>Manufacturer specifications, measurements, derivations, reconstructions and provisional hypotheses remain explicitly distinct.</p></section>
+  </div>
+  <p>Read the <a href="./ontology/README.md">ontology</a>, the <a href="./MIGRATION.md">migration plan</a>, or the <a href="./gallery/README.md">gallery publication status</a>. Source and development history are available through the <a href="https://github.com/sguzman/machinotheca">repository</a>.</p>
+  <footer>Independent public engineering project · original software under MIT, third-party assets under their own terms.</footer>
+</main>
+</body>
+</html>
